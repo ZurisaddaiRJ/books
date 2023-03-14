@@ -24,3 +24,6 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: show linux version
       run: lsb_release -a
+      
+    - name: list directory
+      run: ls -la
