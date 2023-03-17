@@ -33,7 +33,7 @@ jobs:
       
     - name: install dependencies
       run: pip install -r requirements.txt
-      
+      #Realizar los secret en ACTION
     - name: make .env 
       uses: SpicyPizza/create-envfile@v1.3
       with:
