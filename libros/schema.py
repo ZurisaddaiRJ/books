@@ -75,3 +75,5 @@ class CreateLibro(graphene.Mutation): #VARIABLES DE LA CLASE
 #4
 class Mutation(graphene.ObjectType):
     create_libros = CreateLibro.Field()
+
+schema = graphene.Schema(query=Query, mutation=Mutation)
