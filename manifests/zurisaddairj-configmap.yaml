@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+ name: zurisaddairj-config
+ labels:
+   app: postgres
+data:
+ PROD_SECRET_KEY: Saddai.1411
+ PROD_DATABASE: lsycaygn
+ PROD_USER: lsycaygn
+ PROD_PASSWORD: zgCFqMOxGWm1NRyzDOURIaTmgwDt22Vw
+ PROD_HOST: mahmud.db.elephantsql.com 
+ PROD_PORT: "5432"
