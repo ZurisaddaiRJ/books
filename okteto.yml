@@ -6,7 +6,7 @@ deploy:
  - okteto build # build the image with the latest code
  - kubectl apply -f manifests # create all the resources in kubernetes
 dev:
- adsoftsito:
+ zurisaddairj:
    command: bash
    sync:
    - .:/books   # cambiar por su proyecto
