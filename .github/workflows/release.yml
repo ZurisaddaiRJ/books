@@ -58,8 +58,8 @@ jobs:
     - name: Deploy
       uses: okteto/pipeline@2.7.0
       with:
-        name: zurisaddairj # cambiar por su namespace
-        timeout: 5m
+    - name: zurisaddairj # cambiar por su namespace
+      timeout: 5m
 
 
 
