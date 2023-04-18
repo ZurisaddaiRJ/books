@@ -45,7 +45,7 @@ jobs:
         envkey_TEST_PORT : ${{ secrets.TEST_PORT }}     
         file_name: .env
         fail_on_empty: false
-        
+
     - name: show .env file
       run: cat .env
       
@@ -58,11 +58,5 @@ jobs:
     - name: Deploy
       uses: okteto/pipeline@2.7.0
       with:
-    - name: zurisaddairj # cambiar por su namespace
-      timeout: 5m
-
-
-
-
-
-
+    -name: zurisaddairj
+     timeout: 5m
