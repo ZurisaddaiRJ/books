@@ -45,20 +45,19 @@ jobs:
         envkey_TEST_PORT : ${{ secrets.TEST_PORT }}     
         file_name: .env
         fail_on_empty: false
-        
+
     - name: show .env file
       run: cat .env
-      
     - name: run test
       run: python manage.py test --settings=settings.testing -v 3 --keepdb
 
     - uses: okteto/context@2.7.0
       with:
-        token: ${{ secrets.OKTETO_TOKEN }}
+       token: ${{ secrets.OKTETO_TOKEN }}
     - name: Deploy
       uses: okteto/pipeline@2.7.0
       
       with:
         name: zurisaddairj # cambiar por su namespace
-        timeout: 10m
 
+        timeout: 10m
