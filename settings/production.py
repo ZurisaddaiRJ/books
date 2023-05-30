@@ -90,7 +90,7 @@ DATABASES = {
         'USER': PROD_USER,
         'PASSWORD': PROD_PASSWORD,
         'HOST': 'mahmud.db.elephantsql.com',
-        'PORT': 5432,
+        'PORT': '5432',
         #'TEST': {
         #    'NAME': TEST_DATABASE,
         #},
